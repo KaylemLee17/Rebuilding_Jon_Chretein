@@ -8,6 +8,8 @@ body {
     font-size: 20px;
     line-height: 1.5;
     padding: 40px;
+    display: block;
+
 }
 
 .heading_img {
@@ -102,12 +104,12 @@ a:hover {
 
 }
 
-.grid_photography {
+/* .grid_photography {
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(2, 1fr);
 
-}
+} */
 
 .border2 {
     border-top: 1px solid #666;
@@ -115,23 +117,65 @@ a:hover {
 }
 
 .figure {
-    display: block;
-    /* margin-block-start: 1em;
+    /* display: grid;
+    margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 40px;
-    margin-inline-end: 40px; */
+    margin-inline-end: 40px;
     height: auto;
     max-width: 100%;
     margin: 0 auto;
     border: none;
-    font-style: italic;
+    font-style: italic; */
+
+}
+
+.figure-1 {
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.figure-2 {
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    float: right;
+}
+
+.figure-3 {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.figure-4 {
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    position: static;
+}
+
+.figure-5 {
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
 
 }
 
 .grid_music {
-    display: inline-block;
+    display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 24px;
+    margin-bottom: 8px;
+    
     
 }
 
