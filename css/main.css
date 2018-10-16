@@ -104,70 +104,59 @@ a:hover {
 
 }
 
-/* .grid_photography {
+.grid-container-2 {
     display: grid;
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
 
-} */
+.grid-container-2 img{
+    display: block;
+    width: 100%;
+    
+}
+
+.grid-container-2 img:hover {
+    transition: #666 .3s ease;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    opacity: 0.65;
+}
+
+.grid-item2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* grid-column-start: span 2; */
+    width: 613px;
+}
+
+.grid-item3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 613px;
+    /* grid-column-start: span 2; */
+}
+
+.grid-item4{
+    grid-column: 1/ span 2;
+    width:1250px;
+}
+
+.grid-item5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid-item6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
 .border2 {
     border-top: 1px solid #666;
     line-height: 1.3;
-}
-
-.figure {
-    /* display: grid;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-    height: auto;
-    max-width: 100%;
-    margin: 0 auto;
-    border: none;
-    font-style: italic; */
-
-}
-
-.figure-1 {
-    display: grid;
-    grid-auto-columns: auto auto;
-    grid-gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-.figure-2 {
-    display: grid;
-    grid-auto-columns: auto auto;
-    grid-gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
-    float: right;
-}
-
-.figure-3 {
-    display: grid;
-    grid-auto-columns: auto;
-    grid-gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-.figure-4 {
-    display: grid;
-    grid-auto-columns: auto auto;
-    grid-gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
-    position: static;
-}
-
-.figure-5 {
-    display: grid;
-    grid-auto-columns: auto auto;
-    grid-gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
-
 }
 
 .grid_music {
@@ -176,12 +165,17 @@ a:hover {
     grid-gap: 24px;
     margin-bottom: 8px;
     
-    
 }
 
 .cover_art {
-    margin-bottom: 8px;
     box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+    object-fit: contain;
+
 }
 
 .footer_list_item {
